@@ -131,8 +131,9 @@ body {
 /* ! this 'active' css is created by js */
 
 .form form .field i .active::before {
-    color: #fe0505;
-    content: "/f070";
+    color: #000000;
+    content: "f070";
+    /* content: "\f070"; */
 }
 
 
@@ -180,6 +181,7 @@ body {
 .users-list) .details span {
     font-size: 18px;
     font-weight: 500;
+    color: #000;
 }
 
 
@@ -220,6 +222,17 @@ body {
     font-size: 16px;
     border-radius: 5px 0 0 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+/* !this 'active' class is added by js  */
+
+.users .search input .active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
@@ -235,6 +248,11 @@ body {
     color: #fff;
     background: #333;
     border-radius: 0 5px 5px 0;
+}
+
+.users .search button .active {
+    color: #fff;
+    background: #333;
 }
 
 
